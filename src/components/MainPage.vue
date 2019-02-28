@@ -19,7 +19,7 @@
         </el-col>
       </el-row>
     </el-tab-pane>
-    <el-tab-pane label="More">敬请期待</el-tab-pane>
+    <el-tab-pane label="More">敬请期待，啦啦啦</el-tab-pane>
   </el-tabs>
 </template>
 
