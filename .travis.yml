@@ -16,8 +16,6 @@ android:
 cache:
   directories:
     - node_modules
-    - platforms
-    - plugins
 
 before_install:
   # Add node.js dependencies.
@@ -26,6 +24,8 @@ before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - source ~/.bashrc
   - node -v && npm -v && yarn -v
+  - chmod +x ./install-jdk.sh && sudo ./install-jdk.sh && java -Xmx32m -version
+
 
 script:
   - sudo npm install -g cordova
