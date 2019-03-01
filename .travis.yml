@@ -24,7 +24,8 @@ before_install:
   - curl -o- -L https://yarnpkg.com/install.sh | bash
   - source ~/.bashrc
   - node -v && npm -v && yarn -v
-  - sudo chmod +x ./install-jdk.sh 
+  - sudo chmod +x ./install-jdk.sh
+  - ls -al
   - sudo ./install-jdk.sh
   - java -Xmx32m -version
 
