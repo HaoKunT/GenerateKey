@@ -2,16 +2,17 @@
   <el-tabs type="border-card">
     <el-tab-pane label="KeyGenerator">
       <el-row class="autocomplete">
-        <el-col :span="6">
+        <el-col :span="12">
           <el-autocomplete
             class="inline-input"
             v-model="app_name"
             :fetch-suggestions="querySearch"
             placeholder="请输入内容"
             @select="handleSelect"
+            style="width: 300px"
           ></el-autocomplete>
         </el-col>
-        <el-col :span="6">
+        <el-col :span="12">
           <el-button @click="generaterKey" type="primary" plain>转换</el-button>
         </el-col>
         <el-col>
@@ -22,6 +23,13 @@
     <el-tab-pane label="More">敬请期待，啦啦啦</el-tab-pane>
   </el-tabs>
 </template>
+
+<style>
+.el-tabs__item {
+    font-size: 24px;
+}
+</style>
+
 
 <script>
 export default {
